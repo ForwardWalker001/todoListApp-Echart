@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    todos:JSON.parse(localStorage.getItem('todoData') || [])
+    todos:JSON.parse(localStorage.getItem('todoData')) || []
   },
   getters:{
     remaining: function (state) {
